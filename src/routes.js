@@ -1,9 +1,7 @@
-module.exports = {
+const express = require('express'),
+      {online} = require('./controllers/simpleController'),
+      routes = express();
 
-  routes(){
-    server.get('/', (req, res) => {
-      res.send('Online')
-    });
-  }
+routes.get('/', online);
 
-}
+module.exports = routes;

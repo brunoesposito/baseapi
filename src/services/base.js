@@ -1,5 +1,3 @@
-const express = require('express');
-
 module.exports = {
 
   async connectMongo(port){
@@ -12,9 +10,10 @@ module.exports = {
   },
 
   express(port){
-    const bodyParser = require('body-parser'),
+    const express = require('express'),
+          bodyParser = require('body-parser'),
           cors = require('cors'),
-          {routes} = require('../routes'),
+          routes = require('../routes'),
           server = express();
 
     server.use([
