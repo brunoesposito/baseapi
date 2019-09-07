@@ -1,7 +1,7 @@
 const express = require('express'),
-      {online} = require('./controllers/simpleController'),
+      {status} = require('./controllers/statusController'),
       routes = express();
 
-routes.get('/', online);
+routes.get('/status', status);
 
 module.exports = routes;

@@ -1,14 +1,5 @@
 module.exports = {
 
-  async connectMongo(port){
-    const mongoose = require('mongoose');
-    const connect = await mongoose.connect(`mongodb://localhost:${port}/api`, {
-      useNewUrlParser: true,
-    });
-
-    connect;
-  },
-
   express(port){
     const express = require('express'),
           bodyParser = require('body-parser'),
@@ -22,6 +13,6 @@ module.exports = {
       cors(),
       routes
     ]).listen(port);
-  }
+  },
 
 }
