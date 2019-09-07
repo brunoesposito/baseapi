@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 
 module.exports = {
 
-  async connectMongo(port){
+  async connectMongo(){
     const mongoose = require('mongoose');
-    const connect = await mongoose.connect(`mongodb://localhost:${port}/api`, {
+    const connect = await mongoose.connect('mongodb://localhost:27017/api', {
       useNewUrlParser: true,
     });
 

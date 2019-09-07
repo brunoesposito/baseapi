@@ -1,5 +1,5 @@
 const {connectMongo} = require('./services/mongodb');
 const {express} = require('./services/express');
 
-connectMongo('27017');
+connectMongo();
 express(3333);

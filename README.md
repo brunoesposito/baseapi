@@ -1,3 +1,3 @@
 # BaseAPI
 
-*criação de uma api restful com mongoDB para me auxiliar na criação de projetos pessoais.*
+*I created a RestFul API base with MongoDB to use in my backend projects.*
