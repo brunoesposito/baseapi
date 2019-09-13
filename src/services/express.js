@@ -12,7 +12,9 @@ module.exports = {
       bodyParser.urlencoded({ extended: true }),
       cors(),
       routes
-    ]).listen(port);
+    ])
+    .disable('x-powered-by')
+    .listen(port);
   },
 
 }
